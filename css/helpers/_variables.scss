@@ -1,0 +1,33 @@
+/**
+ * VARIABLES
+ * =================================
+
+
+
+/**
+ * Typography
+ * =================================
+ *
+ * Base sizes:
+ */
+
+$font-size-huge           : 50px;
+$font-size-large          : 35px;
+$font-size-medium         : 25px;
+$font-size-base           : 15px; 
+$font-size-alt            : 11px;
+
+
+//Font stacks
+
+$font-family-primary      : 'Josefin Sans', sans-serif;
+$font-family-secondary    : 'Alata', sans-serif;
+
+$font-weight-headings     : lighter;  
+$font-weight-para         : 300;
+
+$font-family-nav          : $font-family-secondary;
+$font-weight-bold         : 400;    
+
+$text-transform           : uppercase;
+$letter-spacing           : .2rem;

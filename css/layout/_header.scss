@@ -1,0 +1,54 @@
+@import "../base/colors";
+@import "../base/reset";
+@import "../helpers/variables";
+
+.title img{
+    position: relative;
+    text-align: center;
+    width: 100%; 
+    height: auto;
+
+    @include media('huge') {
+      display: none;
+    }
+  }
+
+.title-desktop img{
+  display: none;
+
+  @include media('huge') {
+    display: block;
+    width: 100%;
+  }
+}
+
+.toplogo{
+  position: absolute;
+  color: $white;
+  top: 30px;
+  left: 16px;
+  z-index: 1;
+  @include flexbox();
+  @include flex-direction(row);
+
+    @include media('huge'){
+      @include flexbox();
+      @include justify-content(space-between);
+
+    }
+
+    img{
+      width: 85%;
+      padding-left: 20px;
+    }
+
+    ul{
+      @include media('huge'){
+        @include flexbox();
+        @include flex-direction(row);
+      }
+    }
+}
+
+
+

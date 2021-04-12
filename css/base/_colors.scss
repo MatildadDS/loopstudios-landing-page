@@ -1,0 +1,39 @@
+/**
+ * Global color palette
+ * =================================
+ * - Generic colors
+ * - Common colors
+ * - <h1> border color
+ * - Links hover
+ * - Brand colors
+ */
+
+
+ 
+// Generic colors
+
+$white                        : hsl(0, 0%, 100%);
+$black                        : hsl(0, 0%, 0%);
+$dark-gray                    : hsl(0, 0%, 55%);
+$very-dark-gray               : hsl(0, 0%, 41%);
+$light-blue                   : hsl(192, 38%, 54%);
+
+// Common colors
+$color-title                  : $very-dark-gray;
+$color-text                   : $dark-gray;
+
+// <h1> border color
+$h1-color                     :$white;
+$h1-color-border              :$white;
+
+
+// Links hover
+$btn-color-link-active        : $white;
+$btn-bg-color-link-active     : $black;
+$btn-border-active            : $black;
+$h3-color                     : $white;
+$h3-color-link-hover          : $very-dark-gray;
+
+// 3rd party brand colors 
+$color-icones                 : $white;
+

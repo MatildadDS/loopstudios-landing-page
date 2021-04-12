@@ -1,0 +1,91 @@
+@import "../base/colors";
+@import "../base/reset";
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
+
+h1.site-title {
+    color: $h1-color;
+    border: 1px solid $h1-color-border;
+    font-family:  $font-family-secondary;
+    font-weight: $font-weight-headings;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-transform: $text-transform;
+
+    @include media('huge'){
+      @include flexbox();
+      @include flex-direction(column);
+      top: 35%;
+      left: 23%; 
+      font-size: $font-size-huge ;
+      border: 4px solide white;
+    }
+  }
+
+h2{
+    color: $color-title;
+    text-transform: $text-transform;
+    font-family: $font-family-secondary ;
+    font-weight: $font-weight-headings;
+    text-align: center;
+
+    @include media('huge'){
+        @include flexbox();
+        color: $color-title;
+        text-transform: $text-transform;
+        font-family: $font-family-secondary ;
+        font-weight: $font-weight-headings;
+        font-size: $font-size-large ;
+        padding: 0;
+    }
+}
+
+
+h3{
+    @include flexbox();
+    @include flex-direction(column);
+    font-family: $font-family-primary ;
+    font-weight: $font-weight-headings;
+    color: $h3-color ;
+    text-transform: $text-transform;
+    letter-spacing: $letter-spacing;
+    text-align: start;
+    position: absolute;
+    bottom: 30px;
+    left: 35px;
+
+    @include media('huge'){
+        bottom: 35px;
+        left: 45px;
+        font-size: $font-size-medium ;
+    }
+}
+
+.intro-title {
+    @include flexbox();
+    @include flex-direction(column);
+    @include center-children;
+    color: $color-title;
+    text-transform: $text-transform;
+    font-family: $font-family-secondary ;
+    font-weight: $font-weight-headings;
+    padding: 30px 0 30px 0;
+
+    @include media('huge'){
+        @include flexbox();
+        @include flex-direction(column);
+        font-size: $font-size-large ;
+        padding: 50px 0 20px 0;
+    }
+}
+
+.intro-para {
+    color: $color-text ;
+    font-family: $font-family-primary ;
+    line-height: 1.5;
+    padding-bottom: 60px;
+}

@@ -1,0 +1,125 @@
+@import "../base/colors";
+@import "../base/reset";
+@import "../helpers/variables";
+
+.footer{
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    background: $black;
+    color: $white;
+    padding: 40px 20px 30px 20px;
+    text-align: center;
+
+        @include media('huge'){
+            @include flexbox();
+            @include flex-direction(row);
+            @include justify-content(space-between);           
+        }
+
+        img{
+            width: 60%;
+            padding-bottom: 30px ;
+
+            @include media('huge'){
+                width: 50%;
+            }
+        }
+
+            p{  
+                font-size: $font-size-alt;
+                font-family: $font-family-secondary ;
+                font-weight: bold;
+                color: $very-dark-gray ;
+                @include center-children;
+                text-align: center;
+
+                @include media('huge'){
+                    font-size: $font-size-base;
+                }
+            }
+}
+
+.box1{
+    text-align: center;
+
+    @include media('huge'){
+        margin-left: 125px;
+        text-align: start;
+    }
+}
+
+.menuc{
+    @include media('huge'){
+        display: block;
+        @include flexbox();
+        @include flex-direction(row);
+    }
+}
+
+ul.menuc{
+    font-weight: $font-weight-bold;
+    padding-bottom: 30px;
+    text-align: center;
+    
+    li a{
+        font-family: $font-family-secondary  ;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline 3px solid $btn-color-link-active ;
+            text-underline-offset: 1rem;
+          }
+
+        @include media('huge'){
+            padding-right: 30px;
+        }
+    }
+
+        a{
+            text-decoration: none;
+            color: $white;
+            line-height: 3;
+            text-align: center;
+        }    
+}
+
+.box2{
+    @include media('huge'){
+        margin-right: 112px;
+        text-align: end;
+    }
+}
+
+
+.icones{
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(center);
+
+    a{
+        width: 40px;
+        text-align: center;
+
+        @include media('huge'){
+            width: 70px;
+        }
+    }
+}
+
+.attribution {
+    font-size: $font-size-alt ;
+    font-family: $font-family-primary ;
+    font-weight: $font-weight-headings ;
+    text-align: center; 
+    line-height: 1.5;
+    padding-top: 20px;
+
+        @include media('huge'){
+            text-align: end;
+        }
+
+        a {
+            color: $light-blue ;
+        }
+}

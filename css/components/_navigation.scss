@@ -1,0 +1,47 @@
+@import "../base/colors";
+@import "../base/reset";
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
+.topnav{
+    position: absolute;
+    color: $white;
+    top: 30px;
+    right: 16px;
+    z-index: 1;
+    display: block;
+  
+    @include media('huge'){
+        display: none;
+    }
+  }
+  
+  ul.menub{
+      display: none;
+      position: absolute;
+      color: $white;
+  
+      @include media('huge'){
+        display: block;
+        @include flexbox();
+        @include flex-direction(row);
+        font-family: $font-family-secondary ;
+        font-weight: $font-weight-bold ;
+        top: 15px;
+        right: 16px;
+      }
+  
+        li a{
+        font-weight: bold;
+        text-decoration: none;
+        color: $white;
+        line-height: 3;
+        text-align: center;
+        padding-right: 30px;  
+        
+        &:hover {
+          text-decoration: underline 3px solid $btn-color-link-active ;
+          text-underline-offset: 1rem;
+        } 
+      } 
+  }
